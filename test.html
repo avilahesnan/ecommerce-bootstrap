@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body id="body"></body>
+
+  <script>
+    const body = document.getElementById("body");
+
+    //desktopsInfo.nome = prompt("Digite um nome");
+    //desktopsInfo.atributo = prompt("Digite um atributo");
+
+    //body.innerHTML = desktops.nome;
+    //body.innerHTML = desktops.atributo;
+
+    class Desktop {
+      constructor(nome, atributo) {
+        (this.nome = nome), (this.atributo = atributo);
+      }
+    }
+
+    const desktop_01 = new Desktop("Ideaped 3", "Cpu Amd");
+    const desktop_02 = new Desktop("Ideaped 5", "Cpu Amd");
+
+    desktopsInfo = [desktop_01, desktop_02];
+
+    localStorage.setItem("desktops", JSON.stringify(desktopsInfo));
+
+    const getDesktops = localStorage.getItem("desktops");
+    const desktops = JSON.parse(getDesktops);
+
+    //desktops[0].nome
+
+    //link: https://www.amazon.com.br/b?node=16364819011&ref=lp_16364751011_nr_n_1
+  </script>
+</html>

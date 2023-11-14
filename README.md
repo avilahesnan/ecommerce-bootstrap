@@ -1,2 +1,7 @@
 # ecommerce-bootstrap
- Projeto de um ecommerce baseado em Bootstrap, para reforçar os conceitos aprendidos na sala de aula.
+Desenvolvimento de um Front End com a utilização do Framework Bootstrap
+
+Fabrício - Index | Accessories | Product | Register
+Hesnan - Contact | User | FAQ | About Us
+Werik - Best Sellers | Desktops | Smarthphones | Laptops
+Walber - Confirm | Follow-up | New Arrivals | Wearables

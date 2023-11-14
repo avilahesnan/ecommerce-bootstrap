@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Smartphones</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+      id="navIndex"
+    >
+      <a class="navbar-brand ms-2 button-home" href="index.html">iTec</a>
+      <button
+        class="navbar-toggler me-2"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarCollapse" class="navbar-collapse collapse">
+        <ul class="navbar-nav m-auto ps-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="bestSellers.html">Best Sellers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="newArrivals.html">New Arrivals</a>
+          </li>
+
+          <div class="nav-item sub-menu">
+            <a class="nav-link active link-submenu" href="#">
+              Eletronics
+              <!--SUB MENU-->
+            </a>
+            <div class="itens-eletronic">
+              <li>
+                <a class="sub-menu-item" href="laptops.html">Laptops</a>
+              </li>
+              <li>
+                <a class="sub-menu-item" href="desktop.html">Desktops</a>
+              </li>
+              <li>
+                <a class="sub-menu-item" href="smarthphones.html"
+                  >Smartphones</a
+                >
+              </li>
+              <li>
+                <a class="sub-menu-item" href="wearables.html">Wearables</a>
+              </li>
+            </div>
+            <!--itens-eletronic-->
+          </div>
+          <!--nav-item sub-menu-->
+          <!--SUB MENU-->
+
+          <div class="nav-link active menu-info">
+            <a class="link-info link-submenu" href="#">Info</a>
+
+            <div class="infos-lista">
+              <li>
+                <a class="sub-menu-item" href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a class="sub-menu-item" href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a class="sub-menu-item" href="about.html">About</a>
+              </li>
+            </div>
+            <!--infos-->
+          </div>
+
+          <li class="nav-item welcome">
+            <a class="nav-link active boas-vindas">Welcome</a>
+          </li>
+          <li class="nav-item welcome">
+            <a class="nav-link active logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- <img class="w-100 carrossel ativo" src="./imgs/filmes.webp" alt="" />
+      <img class="w-100 carrossel" src="./imgs/iphone.webp" alt="" />
+      <img class="w-100 carrossel" src="./imgs/natal.webp" alt="" />
+      <img class="w-100 carrossel" src="./imgs/grandes_marcas.webp" alt="" /> -->
+
+      <div class="container text-center w-75 rounded">
+        <!-- <div class="row"> -->
+        <!-- <div class="col-md-3" id="filter">
+            <p></p>
+          </div> -->
+
+        <div class="col-md-12">
+          <div class="row" id="itens"></div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </main>
+
+    <footer>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom">
+        <div class="container-fluid">
+          <div class="container-search">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                style="border: none"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                style="border: none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="black"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="ms-auto">
+            <a class="navbar-brand me-1" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a class="navbar-brand" href="#"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="js/smartphones.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrossel.js"></script>
+    <script src="js/submenu.js"></script>
+  </body>
+</html>

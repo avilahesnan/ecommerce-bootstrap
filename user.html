@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>User</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand ms-2 button-home" href="index.html">iTec</a>
+      </nav>
+      <main class="container">
+        <div class="row">
+          <div class="col-md-6 mb-12">
+            <img id="photoUser" class="mx-auto d-block" src="imgs/betao.jpg" alt="user">
+          </div>
+          <div class="col-md-6 mb-3">
+            <h2 class="hiuser">Hi, User</h2>
+            <form>
+              <div class="row">
+                <h4>Identification</h4>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="first_name" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="first_name"
+                      name="first_name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="last_name"
+                      name="last_name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="date_birth" class="form-label"
+                      >Date of Birth</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date_birth"
+                      name="date_birth"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h4>Contact</h4>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control condom"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control condom"
+                      id="phone"
+                      name="phone"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h4>Address</h4>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="street" class="form-label">Street</label>
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="street"
+                      name="street"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="neighborhood" class="form-label"
+                      >Neighborhood</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="neighborhood"
+                      name="neighborhood"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="city"
+                      name="city"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="state"
+                      name="state"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="house_number" class="form-label"
+                      >House Number</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control condom"
+                      id="house_number"
+                      name="house_number"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h4>Security</h4>
+                <div class="col-md-6 mb-3">
+                  <label for="email2" class="form-label">Recovery Email</label>
+                  <input
+                    type="email"
+                    class="form-control condom"
+                    id="email2"
+                    name="email2"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="button" class="form-label">Password hidden</label>
+                  <button type="button" class="btn btn-warning">Change password</button>
+                </div>
+              </div>
+              <a href="user.html" type="button" class="btn btn-secondary">Cancel</a href="">
+              <button type="submit" class="btn btn-success">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/user.js"></script>
+  </body>
+</html>
