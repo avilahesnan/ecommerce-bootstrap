@@ -308,3 +308,19 @@ span {
   color: #d9d9d9 !important;
   opacity: 1;
 }
+
+.wrapper-profile {
+  position: relative;
+}
+
+#menuProfile {
+  background-color: rgb(36, 36, 36);
+  position: absolute;
+  bottom: 48px;
+  left: -100px;
+}
+
+.btn-profile {
+  text-align: center;
+  color: white;
+}

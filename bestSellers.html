@@ -74,7 +74,7 @@
           </div>
 
           <li class="nav-item welcome">
-            <a class="nav-link active boas-vindas">Welcome</a>
+            <a class="nav-link active boas-vindas"></a>
           </li>
         </ul>
       </div>
@@ -173,7 +173,7 @@
           </div>
 
           <div class="dropup" style="display: flex;">
-            <a style="cursor: pointer;" class="navbar-brand" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a style="cursor: pointer;" class="navbar-brand" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               <i class="fa-solid fa-user"></i>
             </a>
 
@@ -181,11 +181,11 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </a>
           
-            <div class="dropdown-menu" aria-labelledby="userDropdown">
-              <a class="dropdown-item" href="user.html">Profile</a>
-              <a class="dropdown-item logout" href="#">Logout</a>
+            <div id="menuProfile" class="dropdown-menu" aria-labelledby="userDropdown">
+              <a class="dropdown-item btn-profile" href="user.html">Profile</a>
+              <a class="dropdown-item btn-profile logout" href="#">Logout</a>
             </div>
-        </div>
+          </div> 
       </nav>
     </footer>
 

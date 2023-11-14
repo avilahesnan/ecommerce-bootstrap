@@ -51,5 +51,5 @@ if (!Boolean(statusLog)) {
 logout.addEventListener("click", () => {
   let statusLogado = Boolean(statusLog);
   statusLogado = false;
-  boasVindas.innerText = "Welcome";
+  boasVindas.innerText = "";
 });
