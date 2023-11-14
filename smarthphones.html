@@ -76,9 +76,6 @@
           <li class="nav-item welcome">
             <a class="nav-link active boas-vindas">Welcome</a>
           </li>
-          <li class="nav-item welcome">
-            <a class="nav-link active logout">Logout</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -135,14 +132,19 @@
             </form>
           </div>
 
-          <div class="ms-auto">
-            <a class="navbar-brand me-1" href="#"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-            <a class="navbar-brand" href="#"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-          </div>
+          <div class="dropup" style="display: flex;">
+            <a style="cursor: pointer;" class="navbar-brand" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a class="open_carrinho navbar-brand me-1" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="user.html">Profile</a>
+              <a class="dropdown-item logout" href="#">Logout</a>
+            </div>
         </div>
       </nav>
     </footer>

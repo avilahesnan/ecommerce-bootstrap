@@ -6,6 +6,7 @@ const modalLogin = document.querySelector(".container-form-login");
 let boasVindas = document.querySelector(".boas-vindas");
 const submit = document.querySelector(".btn-outline-light");
 const btnUserDados = document.querySelector(".fa-user");
+const dropdownMenu = document.querySelector(".dropup .dropdown-menu");
 
 const logout = document.querySelector(".logout");
 
@@ -17,15 +18,18 @@ if (localStorage.getItem("dados")) {
   const userLogado = arr[0];
 
   if (localStorage) {
-    boasVindas.innerText = `Bem vindo(a) ${userLogado}`;
+    boasVindas.innerText = `Welcome ${userLogado}`;
 
     btnUserDados.addEventListener("click", (e) => {
       e.preventDefault();
       modalLogin.classList.remove("active");
-      location.href = "user.html";
+      location.href = "#userDropdown";
     });
   }
-}
+} else {
+    dropdownMenu.style.display = "none";
+  }
+
 
 if (!Boolean(statusLog)) {
   function logar(e) {
@@ -34,10 +38,10 @@ if (!Boolean(statusLog)) {
     e.preventDefault();
     if (email.value == emailUser && senha.value == userPass) {
       modalLogin.classList.remove("active");
-      boasVindas.innerText = `Bem vindo(a) ${userLogado}`;
-      alert("Logado com sucesso!");
+      boasVindas.innerText = `Welcome ${userLogado}`;
+      alert("Successfully logged in!");
     } else {
-      alert("Email ou senha incorreto");
+      alert("Incorrect email or password");
     }
   }
 
@@ -47,5 +51,5 @@ if (!Boolean(statusLog)) {
 logout.addEventListener("click", () => {
   let statusLogado = Boolean(statusLog);
   statusLogado = false;
-  boasVindas.innerText = "Bem vindo(a)";
+  boasVindas.innerText = "Welcome";
 });
