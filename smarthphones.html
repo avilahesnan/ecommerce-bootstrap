@@ -80,13 +80,13 @@
       </div>
     </nav>
 
-    <main id="home" >
+    <main id="home">
       <img class="w-100 carrossel ativo" src="./imgs/filmes.webp" />
       <img class="w-100 carrossel" src="./imgs/iphone.webp" />
       <img class="w-100 carrossel" src="./imgs/natal.webp" />
       <img class="w-100 carrossel" src="./imgs/grandes_marcas.webp" />
     </main>
-    
+
     <div class="container pagamentos">
       <div class="payment">
         <p class="text-justify">
@@ -95,7 +95,8 @@
       </div>
       <div>
         <p>
-          <i class="fa-solid fa-credit-card"></i> Up to 10 interest-free installments
+          <i class="fa-solid fa-credit-card"></i> Up to 10 interest-free
+          installments
         </p>
       </div>
 
@@ -109,7 +110,25 @@
         <p><i class="fa-solid fa-qrcode"></i> BetãoCoins</p>
       </div>
     </div>
-    
+
+    <div
+      class="carrinho offcanvas offcanvas-end text-bg-dark"
+      tabindex="-1"
+      id="offcanvasNavbarDark"
+      aria-labelledby="offcanvasNavbarDarkLabel"
+      arial-modal="true"
+    >
+      <div class="btn-x offcanvas-navbar navbar-dark bg-darkheader">
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body"></div>
+    </div>
+
     <main>
       <!-- <img class="w-100 carrossel ativo" src="./imgs/filmes.webp" alt="" />
       <img class="w-100 carrossel" src="./imgs/iphone.webp" alt="" />
@@ -131,95 +150,153 @@
 
     <div class="wrapper">
       <div class="container container-form-login">
-      <div class="card bg-dark text-white form-login" style="border-radius: 1rem;">
-        <div class="card-body text-center">
-          <div class="mb-md-5">
-            <p class="closeModal">X</p>
-            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-              <p class="text-white-50 mb-5">Please enter your login and password!</p>
-      
-                <div class="form-outline form-white mb-4">
-                  <input type="email" id="typeEmailX" required class="form-control email form-control-lg">
-                    <label class="form-label" for="typeEmailX" style="margin-left: 0px;">Email</label>
-                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div></div>
-                  <form action="">
-                    <div class="form-outline form-white mb-4">
-                        <input type="password" id="typePasswordX" required class="form-control senha form-control-lg">
-                        <label class="form-label" for="typePasswordX" style="margin-left: 0px;">Password</label>
-                      <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
-      
-                      <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-      
-                      <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
-                  </form>
-                      <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                        <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                        <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
-                      </div>
-      
-                    </div>
-      
-                    <div>
-                      <p class="mb-0">Don't have an account? <a href="registrar.html" class="text-white-50 fw-bold">Sign Up</a></p>
-                    </div>
-      
-                  </div>
+        <div
+          class="card bg-dark text-white form-login"
+          style="border-radius: 1rem"
+        >
+          <div class="card-body text-center">
+            <div class="mb-md-5">
+              <p class="closeModal">X</p>
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">
+                Please enter your login and password!
+              </p>
+
+              <div class="form-outline form-white mb-4">
+                <input
+                  type="email"
+                  id="typeEmailX"
+                  required
+                  class="form-control email form-control-lg"
+                />
+                <label
+                  class="form-label"
+                  for="typeEmailX"
+                  style="margin-left: 0px"
+                  >Email</label
+                >
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px"></div>
+                  <div class="form-notch-middle" style="width: 40px"></div>
+                  <div class="form-notch-trailing"></div>
                 </div>
-      </div>
-      </div>
-          <footer id="footerIndex">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom">
-              <div class="container-fluid">
-                <div class="container-search">
-                  <form class="d-flex" role="search">
-                    <input
-                      class="form-control"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                      style="border: none"
-                    />
-                    <button
-                      class="btn btn-outline-success"
-                      type="submit"
-                      style="border: none"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="black"
-                        class="bi bi-search"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                        />
-                      </svg>
-                    </button>
-                  </form>
-                </div>
-                <div class="container">
-                  
-                </div>
-                <div class="dropup" style="display: flex;">
-                  <a style="cursor: pointer;" class="navbar-brand" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <i class="fa-solid fa-user"></i>
-                  </a>
-      
-                  <a class="open_carrinho navbar-brand me-1" href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </a>
-                
-                  <div id="menuProfile" class="dropdown-menu" aria-labelledby="userDropdown">
-                    <a class="dropdown-item btn-profile" href="user.html">Profile</a>
-                    <a class="dropdown-item btn-profile logout" href="#">Logout</a>
-                  </div>
-                </div>                   
               </div>
-            </nav>
-          </footer>
+              <form action="">
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="password"
+                    id="typePasswordX"
+                    required
+                    class="form-control senha form-control-lg"
+                  />
+                  <label
+                    class="form-label"
+                    for="typePasswordX"
+                    style="margin-left: 0px"
+                    >Password</label
+                  >
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px"></div>
+                    <div class="form-notch-middle" style="width: 64px"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+
+                <p class="small mb-5 pb-lg-2">
+                  <a class="text-white-50" href="#!">Forgot password?</a>
+                </p>
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">
+                  Login
+                </button>
+              </form>
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="text-white"
+                  ><i class="fab fa-facebook-f fa-lg"></i
+                ></a>
+                <a href="#!" class="text-white"
+                  ><i class="fab fa-twitter fa-lg mx-4 px-2"></i
+                ></a>
+                <a href="#!" class="text-white"
+                  ><i class="fab fa-google fa-lg"></i
+                ></a>
+              </div>
+            </div>
+
+            <div>
+              <p class="mb-0">
+                Don't have an account?
+                <a href="registrar.html" class="text-white-50 fw-bold"
+                  >Sign Up</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footerIndex">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom">
+        <div class="container-fluid">
+          <div class="container-search">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                style="border: none"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                style="border: none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="black"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="container"></div>
+          <div class="dropup" style="display: flex">
+            <a
+              style="cursor: pointer"
+              class="navbar-brand"
+              id="userDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a class="open_carrinho navbar-brand me-1" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <div
+              id="menuProfile"
+              class="dropdown-menu"
+              aria-labelledby="userDropdown"
+            >
+              <a class="dropdown-item btn-profile" href="user.html">Profile</a>
+              <a class="dropdown-item btn-profile logout" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
 
     <script src="js/smartphones.js"></script>
     <script src="js/popper.js"></script>

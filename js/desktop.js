@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Windows 10",
     "17,1 Polegadas",
     "8 GB",
-    "3green Deskop",
+    "Deskop",
     "Intel Core i5",
-    1239.99,
+    "1239,99",
     "https://m.media-amazon.com/images/I/61h-rFM1QdL._AC_SL1000_.jpg",
     "https://www.amazon.com.br/Computador-Completo-Desktop-Monitor-3D-051/dp/B0BVJGKCJB/ref=sr_1_3_sspa?c=ts&keywords=CPUs+de+Computadores&qid=1697584304&s=computers&sr=1-3-spons&ts_id=16364819011&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
   );
@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Windows 10",
     "19 Polegadas",
     "16 GB",
-    "3green Office",
+    "Office",
     "Intel Core i7",
-    1649.99,
+    "1649,99",
     "https://m.media-amazon.com/images/I/51vmA52feFL._AC_SL1000_.jpg",
     "https://www.amazon.com.br/Computador-Completo-Windows-Monitor-3green/dp/B0CFYMK52W/ref=sr_1_10?c=ts&keywords=CPUs+de+Computadores&qid=1697584304&s=computers&sr=1-10&ts_id=16364819011&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147"
   );
@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Windows 10 Pro",
     "19 Polegadas",
     "16 GB",
-    "Computador Strong Tech",
+    "Computador",
     "Intel Core i7-2600",
-    1599.01,
+    "1599,01",
     "https://m.media-amazon.com/images/I/716DuGwWLAL._AC_SL1200_.jpg",
     "https://www.amazon.com.br/Computador-Intel-N%C3%BAcleos-Strong-Tech/dp/B0BS1QT16H/ref=sr_1_9?c=ts&keywords=CPUs+de+Computadores&qid=1697589446&s=computers&sr=1-9&ts_id=16364819011"
   );
@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Windows 10",
     "19 Polegadas",
     "8 GB",
-    "Flex Computer",
+    "Office",
     "Intel Core i5",
-    1066.41,
+    "1066,41",
     "https://m.media-amazon.com/images/I/51LnfULhGYL._AC_SL1000_.jpg",
     "https://www.amazon.com.br/Computador-Flex-Computer-Monitor-Windows/dp/B09BD5PTWW/ref=sr_1_10?c=ts&keywords=CPUs%2Bde%2BComputadores&qid=1697589446&s=computers&sr=1-10&ts_id=16364819011&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&th=1"
   );
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "8 GB",
     "49147",
     "Intel Core i5",
-    1369.99,
+    "1369,99",
     "https://m.media-amazon.com/images/I/61xm1msZ6NL._AC_SL1200_.jpg",
     "https://www.amazon.com.br/Computador-Completo-Windows-Monitor-ElitePC/dp/B0977T1YC2/ref=sr_1_48?c=ts&keywords=CPUs+de+Computadores&qid=1697589862&s=computers&sr=1-48&ts_id=16364819011&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147"
   );
@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     var tagDiv = document.createElement("div");
     tagDiv.className = "col-md-3 p-3";
+    tagDiv.style.border = "1px solid rgba(200, 200, 200, 0.2)";
 
     var tagA = document.createElement("a");
     tagA.href = "#";
@@ -113,37 +114,28 @@ document.addEventListener("DOMContentLoaded", () => {
     tagImg.className = "img-fluid rounded";
     tagImg.src = linkImg;
     tagImg.alt = marca;
+    tagImg.style.height = "20vh";
 
     tagA.appendChild(tagImg);
     tagDiv.appendChild(tagA);
 
     var tagP = document.createElement("p");
-    tagP.textContent = `${marca} ${modelo} R$ ${preco} ${btn}`;
+    tagP.textContent = `${marca} ${modelo}`;
+    tagP.style.margin = "16px 0px 0px 1px"
 
     tagDiv.appendChild(tagP);
 
+    var tagPreco = document.createElement("p");
+    tagPreco.textContent = `R$ ${preco}`;
+
+    tagDiv.appendChild(tagPreco);
+
+    var tagButton = document.createElement("button");
+    tagButton.className = "btn btn-success add-to-cart";
+    tagButton.textContent = "Add to cart";
+
+    tagDiv.appendChild(tagButton);
+
     document.getElementById("itens").appendChild(tagDiv);
   });
-
-  //const bodyDesktop = document.getElementsByid('bodyDesktop');
-
-  //import { HeaderFooter } from "./reaproveitamento";
-
-  // const nav = document.getElementById('navIndex');
-  // const main = document.getElementById('mainDesktop');
-  // const body = document.getElementById('bodyDesktop');
-
-  // body.appendChild(HeaderFooter.nav)
-  // console.log(HeaderFooter.nav);
-
-  //var sp1 = document.createElement("span");
-
-  //// Guarda a referência do elemento atraś do qual nos queremos inserir o novo elemento
-  //var sp2 = document.getElementById("elementoFilho");
-  //// Guarda a referência do elemento pai
-  //var divPai = sp2.parentNode;
-
-  //// Insere o novo elemento no DOM antes de sp2
-  //divPai.insertBefore(sp1, sp2);
-  //})
 });
